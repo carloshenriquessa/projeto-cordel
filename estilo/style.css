@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: "Passion One", sans-serif;
+    --fonte03: "Crimson Text", serif;
+
+    --cor01: #F8AFB6;
+    --cor02: #A7404B;
+    --cor03: #FC0D25;
+    --cor04: #7D454A;
+    --cor05: #523B3D;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+
+header{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px ;
+    font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;
+}
+
+header>p{
+    padding-bottom: 50px;
+    font-variant: small-caps;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 35px;
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
+}
+
+section>p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.612);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem>p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.525);
+    padding: 5px;
+    text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.549);
+
+}
+
+section#img1{
+    background-image: url('../imagens/imagem-cordel-moderno-int.jpg');
+    background-position: left top;
+}
+
+section#img2{
+    background-image: url(../imagens/imagem-cordel-moderno-int.jpg);
+    background-position: left bottom;
+}
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
